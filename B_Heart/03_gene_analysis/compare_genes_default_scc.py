@@ -14,6 +14,9 @@ with open(sys.argv[2], "r") as f:
         if int(items[12]) > 10:
             scc_genes.add(items[3])
 
-print(len(default_genes.intersection(scc_genes)))
-print(len(default_genes-scc_genes))
-print(len(scc_genes-default_genes))
+# print(len(default_genes.intersection(scc_genes)))
+# print(len(default_genes-scc_genes))
+# print(len(scc_genes-default_genes))
+
+print(default_genes-scc_genes)
+print(scc_genes-default_genes)
